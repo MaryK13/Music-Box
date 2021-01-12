@@ -19,16 +19,16 @@
   outline: none;
   cursor: pointer;
 
-  .img-btn {
-    width: 25px;
-    height: 25px;
-    color: #FFFFFF;
-    filter: invert(1);
-  }
-
   .m-btn {
     margin: -4px 10px -7px -10px;
   }
+}
+
+.img-btn {
+  width: 25px;
+  height: 25px;
+  color: #FFFFFF;
+  filter: invert(1);
 }
 
 .bg-violet {

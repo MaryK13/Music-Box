@@ -62,13 +62,20 @@
   .grid-card {
     grid-template-rows: repeat(2, 580px);
     grid-gap: 45px;
+
+    .bg-size {
+      background-size: cover;
+    }
   }
 
-  .bg-size {
-    background-size: cover;
-  }
-  .card-btn {
-    width: 100%;
+  .card-content {
+    width: 90%;
+    text-align: center;
+
+    .card-btn {
+      width: 100%;
+      padding: 20px 50px;
+    }
   }
 
   .author {
@@ -167,6 +174,12 @@
   .mb-10 {
     img {
       width: 130px;
+    }
+  }
+
+  .img-block {
+    .img-btn {
+      width: 25%;
     }
   }
 
