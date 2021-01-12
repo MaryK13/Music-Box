@@ -1,0 +1,191 @@
+@import "styles/scss/variables.scss";
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+
+  .header {
+    @include flex(row, space-between, flex-start);
+
+    .header-logo {
+      margin: 0;
+    }
+
+    .header-menu {
+      margin: 0;
+    }
+  }
+
+  .h1 {
+    font-size: 50px;
+  }
+
+  .grid-card {
+    grid-template-rows: repeat(2, 580px);
+    justify-content: center;
+  }
+
+  .grid-disco {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    width: 65%;
+  }
+
+  .author {
+    width: 55%;
+  }
+
+  .h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .h1 {
+    font-size: 37px;
+    line-height: 35px;
+  }
+
+  .fs-30 {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  .m-45-40 {
+    margin: 45px 45px 40px;
+  }
+
+  .grid-card {
+    grid-template-rows: repeat(2, 580px);
+    grid-gap: 45px;
+  }
+
+  .bg-size {
+    background-size: cover;
+  }
+  .card-btn {
+    width: 100%;
+  }
+
+  .author {
+    width: 80%;
+  }
+
+  .first-menu {
+
+    section {
+
+      ul {
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+
+  .h6 {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 65%;
+  }
+
+  .header {
+    flex-direction: column;
+    margin: 0 0 0 30px;
+
+    .header-logo {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .header-menu {
+      ul {
+        flex-direction: column;
+
+        li {
+          margin: 0 36px 10px 0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .search {
+      width: 55%;
+    }
+  }
+
+  .m-45-40 {
+    margin: 45px 0 40px;
+  }
+
+  .padding-250 {
+    padding: 250px 0 100px 0;
+  }
+
+  .main {
+    padding: 50px 0;
+  }
+
+  .bg-home .form {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .second-menu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .grid-card {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(3, 580px);
+    grid-gap: 45px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .grid-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+
+  .mb-10 {
+    img {
+      width: 130px;
+    }
+  }
+
+  .grid-disco {
+    grid-template-columns: repeat(2, 140px);
+    grid-gap: 40px;
+  }
+
+  .flex-artists {
+    align-items: flex-start;
+  }
+
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .btn-catalog {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}

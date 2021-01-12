@@ -1,0 +1,39 @@
+//font
+$font: "Roboto", sans-serif;
+
+@mixin font-size($size, $height, $color) {
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+//color
+$primary-color: #FFFFFF;
+$gray: #808080;
+
+//margin
+
+
+//width
+$width-55: 55%;
+
+@mixin size ($width, $height){
+  width: $width;
+  height: $height;
+}
+
+//flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//grid
+@mixin grid($columns, $row, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $row;
+  grid-gap: $gap;
+}
