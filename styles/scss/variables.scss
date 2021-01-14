@@ -1,22 +1,25 @@
 //font
 $font: "Roboto", sans-serif;
 
-@mixin font-size($size, $height, $color) {
+@mixin font-size($size, $height) {
   font-size: $size;
   line-height: $height;
-  color: $color;
 }
 
 //color
 $primary-color: #FFFFFF;
-$gray: #808080;
-
-//margin
-
+$gray-original: #808080;
+$gray: #8c8c8c;
+$orange: #F89202;
+$light-gray: #B8B8B8;
+$dark-gray: #555555;
+$pink: #FF4157;
+$green: #34C176;
+$dark-purple: #08020D;
+$purple: #5328A1;
+$brown: #95390C;
 
 //width
-$width-55: 55%;
-
 @mixin size ($width, $height){
   width: $width;
   height: $height;
@@ -31,9 +34,8 @@ $width-55: 55%;
 }
 
 //grid
-@mixin grid($columns, $row, $gap) {
+@mixin grid($columns, $gap) {
   display: grid;
   grid-template-columns: $columns;
-  grid-template-rows: $row;
   grid-gap: $gap;
 }

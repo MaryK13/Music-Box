@@ -9,11 +9,11 @@
 }
 
 .btn-catalog {
-  width: 200px;
-  height: 56px;
+  @include size(200px, 56px);
+
   margin: 0 35px 0 0;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $primary-color;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -25,14 +25,14 @@
 }
 
 .img-btn {
-  width: 25px;
-  height: 25px;
-  color: #FFFFFF;
+  @include size(25px, 25px);
+
+  color: $primary-color;
   filter: invert(1);
 }
 
 .bg-violet {
-  background: #5328A1;
+  background: $purple;
 
   &:hover {
     opacity: 0.7;
@@ -40,7 +40,7 @@
 }
 
 .bg-brown {
-  background: #95390C;
+  background: $brown;
 
   &:hover {
     opacity: 0.7;
@@ -53,35 +53,32 @@
   grid-row-gap: 25px;
 
   .flex-music {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, end);
 
     .artist {
       display: flex;
 
       img {
-        width: 55px;
-        height: 50px;
+        @include size(55px, 50px);
+
         margin-right: 16.5px;
       }
     }
 
     .time {
-      color: #8C8C8C;
+      color: $gray;
     }
   }
 }
 
 .font-harket {
-  font-size: 12px;
-  line-height: 14px;
-  color: #808080;
+  @include font-size(12px, 14px);
+
+  color: $gray-original;
 }
 
 .grid-disco {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-gap: 50px;
+  @include grid(repeat(auto-fill, 250px), 50px);
 }
 
 .img-block {
@@ -98,18 +95,15 @@
 }
 
 .fs-20 {
-  font-size: 20px;
-  line-height: 23px;
+  @include font-size(20px, 23px);
 }
 
 .flex-artists {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, center);
 
   .width-artists {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
+
     margin: 0 0 15px 0;
   }
 }

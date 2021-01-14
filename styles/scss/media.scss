@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .form {
+  .bg-home .form {
     width: 65%;
   }
 
@@ -47,13 +47,11 @@
 
 @media screen and (max-width: 815px) {
   .h1 {
-    font-size: 37px;
-    line-height: 35px;
+    @include font-size(37px, 35px);
   }
 
   .fs-30 {
-    font-size: 23px;
-    line-height: 20px;
+    @include font-size(23px, 20px);
   }
   .m-45-40 {
     margin: 45px 45px 40px;
@@ -150,16 +148,14 @@
 
   .second-menu {
     ul {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      @include flex(column, center, flex-start);
     }
   }
 
   .grid-card {
-    grid-template-columns: repeat(1, 300px);
+    @include grid(repeat(1, 300px), 45px);
+
     grid-template-rows: repeat(3, 580px);
-    grid-gap: 45px;
   }
 
   .h2 {
@@ -167,8 +163,7 @@
   }
 
   .grid-info {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 25px;
+    @include grid(repeat(1, 1fr), 25px);
   }
 
   .mb-10 {
@@ -184,8 +179,7 @@
   }
 
   .grid-disco {
-    grid-template-columns: repeat(2, 140px);
-    grid-gap: 40px;
+    @include grid(repeat(2, 140px), 40px);
   }
 
   .flex-artists {
