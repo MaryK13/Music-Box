@@ -18,15 +18,26 @@ body {
   margin: 0 auto;
 }
 
-header {
+#menu {
+  display: none;
+}
+
+.humburger-menu {
+  display: flex;
+}
+
+.humburger-button {
+  display: none;
+}
+
+
+
+.header {
   @include flex(row, center, flex-start);
 
-  position: absolute;
-  top: 25px;
-  left: 0;
-  right: 0;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 25px 0 0 0;
 
   .header-logo {
     display: flex;
@@ -34,7 +45,7 @@ header {
   }
 
   .header-menu {
-    margin: 0 300px 0 0;
+    margin: 0 250px 0 0;
 
     ul {
       list-style: none;
@@ -73,7 +84,7 @@ header {
     padding: 7px 14px;
     text-transform: uppercase;
     outline: none;
-    width: 23%;
+    width: 30%;
   }
 }
 

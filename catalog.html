@@ -10,44 +10,56 @@
 	<title>Портал "Music Box"</title>
 </head>
 <body class="font">
-<header class="header container fs-11">
-    <div class="header-logo">
-        <img class="img-20 m-5" src="images/logo.svg" alt="Music Box">
-        <p>Music Box</p>
-    </div>
-    <nav class="header-menu">
-        <ul>
-            <li>
-                <a class="nav" href="index.html">Главная</a>
-            </li>
-            <li>
-                <a class="nav active-link" href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a class="nav" href="#">Исполнители</a>
-            </li>
-            <li>
-                <a class="nav" href="#contacts">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-    <input class="search" type="search" placeholder="Поиск">
-</header>
-
-<div class="wrapper bg-catalog bg-img padding-280-0-80">
+<header class="bg-catalog bg-img fs-11">
     <div class="container">
-        <h1 class="h1">Morten Harket</h1>
-        <p class="fs-18">24 875 поклонников</p>
-        <button class="btn-catalog bg-violet fs-14">
-            <img class="img-btn m-btn" src="images/play-button.svg" alt="play">
-            Микс
-        </button>
-        <button class="btn-catalog bg-brown fs-14">
-            <img class="img-btn m-btn" src="images/heart.svg" alt="heart">
-            В избранное
-        </button>
+        <div class="header">
+            <div class="humburger-menu">
+                <input id="menu" type="checkbox">
+                <label class="menu_btn" for="menu">
+
+                    <div class="header-logo">
+                        <img class="img-20 m-5 logo-music" src="images/logo.svg" alt="Music Box">
+                        <img class="humburger-button img-20 m-5" src="images/hamburger-button.png" alt="Menu">
+                        <p>Music Box</p>
+                    </div>
+
+                </label>
+                <nav class="header-menu">
+                    <ul>
+                        <li>
+                            <a class="nav" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="nav active-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="nav" href="#">Исполнители</a>
+                        </li>
+                        <li>
+                            <a class="nav" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <input class="search" type="search" placeholder="Поиск">
+        </div>
     </div>
-</div>
+
+    <div class="padding-280-0-80">
+        <div class="container">
+            <h1 class="h1">Morten Harket</h1>
+            <p class="fs-18">24 875 поклонников</p>
+            <button class="btn-catalog bg-violet fs-14">
+                <img class="img-btn m-btn" src="images/play-button.svg" alt="play">
+                Микс
+            </button>
+            <button class="btn-catalog bg-brown fs-14">
+                <img class="img-btn m-btn" src="images/heart.svg" alt="heart">
+                В избранное
+            </button>
+        </div>
+    </div>
+</header>
 
 <main class="main">
     <div class="container">

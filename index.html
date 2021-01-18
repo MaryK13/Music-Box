@@ -9,44 +9,58 @@
     <title>Портал "Music Box"</title>
 </head>
 <body class="font">
-<header class="header container fs-11">
-    <div class="header-logo">
-        <img class="img-20 m-5" src="images/logo.svg" alt="Music Box">
-        <p>Music Box</p>
+<header class="bg-home bg-img fs-11">
+    <div class="container">
+        <div class="header">
+            <div class="humburger-menu">
+                <input id="menu" type="checkbox">
+                <label class="menu_btn" for="menu">
+
+                    <div class="header-logo">
+                        <img class="img-20 m-5 logo-music" src="images/logo.svg" alt="Music Box">
+                        <img class="humburger-button img-20 m-5" src="images/hamburger-button.png" alt="Menu">
+                        <p>Music Box</p>
+                    </div>
+
+                </label>
+
+                <nav class="header-menu">
+                    <ul>
+                        <li>
+                            <a class="nav active-link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="nav" href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="nav" href="#">Исполнители</a>
+                        </li>
+                        <li>
+                            <a class="nav" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <input class="search" type="search" placeholder="Поиск">
+        </div>
     </div>
-    <nav class="header-menu">
-        <ul>
-            <li>
-                <a class="nav active-link" href="index.html">Главная</a>
-            </li>
-            <li>
-                <a class="nav" href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a class="nav" href="#">Исполнители</a>
-            </li>
-            <li>
-                <a class="nav" href="#contacts">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-    <input class="search" type="search" placeholder="Поиск">
+
+    <div class="padding-250">
+        <div class="container align">
+            <h1 class="h1">Онлайн музыка где угодно</h1>
+            <p class="fs-30 font-w">без ограничений</p>
+            <p class="fs-18 font-w m-45-40">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте
+                мир
+                музыки</p>
+
+            <form name="form" class="form fs-14">
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Email">
+                <button>Получить доступ</button>
+            </form>
+        </div>
+    </div>
 </header>
-
-<div class="bg-home bg-img padding-250">
-    <div class="container align">
-        <h1 class="h1">Онлайн музыка где угодно</h1>
-        <p class="fs-30 font-w">без ограничений</p>
-        <p class="fs-18 font-w m-45-40">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир
-            музыки</p>
-
-        <form name="form" class="form fs-14">
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="Email">
-            <button>Получить доступ</button>
-        </form>
-    </div>
-</div>
 
 <main class="main">
     <div class="container mb-100">

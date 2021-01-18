@@ -5,6 +5,12 @@
     width: 95%;
   }
 
+  .humburger-menu {
+    max-width: 480px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .header {
     @include flex(row, space-between, flex-start);
 
@@ -46,6 +52,18 @@
 }
 
 @media screen and (max-width: 815px) {
+  .search_form .search {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    width:85px;
+    min-height: 28px;
+    font-size: 12px;
+  }
+
+  .search_form .search:focus {
+    width: 250px;
+  }
+
+
   .h1 {
     @include font-size(37px, 35px);
   }
@@ -100,13 +118,68 @@
     width: 65%;
   }
 
+  .humburger-menu {
+    display: block;
+  }
+
+  .logo-music {
+    display: none;
+  }
+
+  .humburger-button {
+    display: block;
+  }
+
+  .header-menu ul {
+    display: block;
+  }
+
+  .header-menu li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .menu_btn {
+    display: block;
+    position: relative;
+    align-items: center;
+
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .menu_btn .header-menu ul,
+  .menu_btn .header-menu ul::before,
+  .menu_btn .header-menu ul::after {
+    display: block;
+    content: "";
+    outline: none;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  #menu:not(:checked) ~ .header-menu ul {
+    display: none;
+  }
+
+  #menu:checked ~ .header-menu ul {
+    display: block;
+  }
+
+  .m-5 {
+    margin: 12px 5px 0 0;
+  }
+
   .header {
     flex-direction: column;
     margin: 0 0 0 30px;
 
     .header-logo {
       p {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -131,7 +204,7 @@
   }
 
   .padding-250 {
-    padding: 250px 0 100px 0;
+    padding: 100px 0;
   }
 
   .main {
@@ -195,4 +268,8 @@
     width: 100%;
     margin: 0 0 10px 0;
   }
+}
+
+.padding-280-0-80 {
+  padding: 80px 0;
 }
